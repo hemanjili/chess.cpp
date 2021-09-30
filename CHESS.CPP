@@ -462,7 +462,8 @@ void wrongStart()
 	cout<<"enter initial position ¯ ";
 }
 
-/////ClearText////void cleartext(){
+// ClearText
+void cleartext(){
 	for(int i=1;i<=27;i++)
 		for(int j=1;j<=8;j++){
 			gotoxy(i,j);
@@ -472,7 +473,7 @@ void wrongStart()
 	cout<<"enter initial position ¯ ";
 }
 
-/////Initialize////
+//Initialize//
 
 void initialize(){
 	  setcolor(WHITE);
@@ -535,7 +536,7 @@ x1==x-2)||(y1==y-2 && x1==x+1)||(y1==y-2 && x1==x-1)){
 	return a;
 }
 
-/////KING////
+//KING//
 
 int king(int x,int y,int x1,int y1)
 {
@@ -545,7 +546,7 @@ x1==x+1)||(y1==y+1 && x1==x-1)||(y1==y-1 && x1==x+1)||(y1==y-1 &&
 x1==x-1)||(y1==y && x1==x+1)||(y1==y && x1==x-1)){
 	a = 1;
 }
-/////CASTLING//////
+//CASTLING//
 
      else
 if(board[y][x+1]==0&&board[y][x+2]==0&&(abs(board[y1][x1]) 
